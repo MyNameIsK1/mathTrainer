@@ -155,7 +155,7 @@ function startTraining() {
             } else if (addition == true && subtraction == true && multiplication == false) {
                 operationsText = "adição e subtração";
             } else if (addition == true && subtraction == true && multiplication == true) {
-                operationsText = "adição, subtração e multplicação";
+                operationsText = "adição, subtração e multiplicação";
             }
             document.getElementById("settingsMenu").style.display = "none";
             startCounter();
