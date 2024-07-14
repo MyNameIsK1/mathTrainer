@@ -216,9 +216,11 @@ function restartGame() {
     mistakes = 0;
     solvedProblems = 0;
     meanTime = 0;
+    totalTime = 0;
     clearInterval(interval);
-    startCounter();
     document.getElementById("streakDisplay").innerText = "streak: " + streak.toString();
+    document.getElementById("meanDisplay").innerText = "tempo " + meanTime.toString();
+    startCounter();
     genNumbers(minInterval, maxInterval);
 }
 function exitGame() {
