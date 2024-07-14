@@ -140,7 +140,9 @@ function startTraining() {
         if (minInterval > maxInterval || minInterval == maxInterval || maxInterval <= 0 || minInterval <= 0 || document.getElementById("minIntervalInput").value == '' || document.getElementById("maxIntervalInput").value == '') {
             alert("Por favor, insira um intervalo válido.");
         } else {
-            if (addition == true && subtraction == false && multiplication == false) {
+            if (maxInterval > 1000000 || minInterval > 1000000) {
+                alert("Quer dizer que temos um novo Ramanujan agora?");
+            } if (addition == true && subtraction == false && multiplication == false) {
                 operationsText = "adição";
             } else if (addition == false && subtraction == true && multiplication == false) {
                 operationsText = "subtração";
