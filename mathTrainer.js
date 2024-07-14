@@ -243,6 +243,7 @@ function returnToMenu() {
     mistakes = 0;
     solvedProblems = 0;
     meanTime = 0;
+    totalTime = 0;
     clearInterval(interval);
     addition = false;
     document.getElementById('additionButton').style.backgroundColor = "rgb(59, 59, 59)";
