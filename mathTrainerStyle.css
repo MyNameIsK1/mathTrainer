@@ -1,0 +1,209 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    background: linear-gradient(180deg, rgb(219, 2, 219), rgb(100, 2, 100));
+}
+#settingsMenu {
+    background-color: rgb(27, 27, 27);
+    box-sizing: border-box;
+    padding: 30px 20px 20px 20px;
+    border-style: solid;
+    border-radius: 10px;
+    color: lightgray;
+}
+#message {
+    font-size: 1.3em;
+    margin-top: 10px;
+    color: white;
+}
+#messageBox {
+    margin-top: 15px;
+}
+.reportBox {
+    padding: 0.2em;
+}
+#settingsMenu p {
+    font-size: 1em;
+}
+#resultsFromGame h1 {
+    color: lightblue;
+}
+#operationsReport {
+    color: lightgreen;
+}
+#streakReport {
+    color: orange;
+}
+#timeReport {
+    color: rgb(110, 203, 235);
+}
+#mistakesReport {
+    color: rgb(255, 103, 103);
+}
+#intervalReport {
+    color: yellow;
+}
+.intervalConfigLabel {
+    font-size: 1.1em;
+}
+.intervalConfig {
+    width: 25%;
+    border-style: solid;
+    border-radius: 3px;
+    padding: 5px;
+    border-color: lightpink;
+    background-color: rgb(65, 64, 64);
+    color: white;
+}
+#resultsFromGame {
+    background-color: rgb(27, 27, 27);
+    padding: 5px 15px 25px 15px;
+    border-style: solid;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: lightgray;
+    display: none;
+}
+#resultsFromGame div {
+    text-align: left;
+}
+.operationsChoose:hover, #startTrainingButton:hover, .playButtons:hover, #returnMenuButton:hover {
+    color: white;
+    background-color: rgb(255, 145, 255);
+}
+main {
+    display: none;
+    background-color: rgb(27, 27, 27);
+    border-style: solid;
+    border-radius: 10px;
+    border-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#displaysBox {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 15px;
+}
+#streakDisplay {
+    margin-right: 10px;
+    color: orange;
+}
+#tempDisplay {
+    margin-right: 10px;
+    color: lightblue;
+}
+#meanDisplay {
+    color: pink;
+}
+#challenge {
+    color: lightpink;
+    font-size: 4em;
+    padding: 20px;
+}
+#insertAnswerBlock {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+#insertAnswerBlock label {
+    color: white;
+    font-size: 1.25em;
+}
+#insertAnswer {
+    border-style: solid;
+    border-radius: 8px;
+    border-color: lightpink;
+    background-color: rgb(65, 64, 64);
+    padding-top: 14px;
+    padding-bottom: 14px;
+    width: 60%;
+    color: white;
+    font-size: 1.6em;
+}
+#returnMenuButton {
+    width: 50%;
+    height: 15%;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 1.25em;
+    background-color: rgb(59, 59, 59);
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(255, 145, 255);
+    color: rgb(255, 145, 255);
+    
+}
+.playButtons {
+    width: 30%;
+    height: 100%;
+    font-size: 1.2em;
+    padding: 10px;
+    background-color: rgb(59, 59, 59);
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(255, 145, 255);
+    color: rgb(255, 145, 255);
+}
+#returnMenuFromGameButton {
+    width: 50%;
+}
+#returnMenuFromGameBox {
+    margin-bottom: 10px;
+}
+#playButtonsBox {
+    margin-bottom: 10px;
+}
+#settingsMenu h1 {
+    color: rgb(255, 145, 255);
+}
+.operationsChoose {
+    width: 32%;
+    height: 100%;
+    background-color: rgb(59, 59, 59);
+    border-style: solid;
+    border-radius: 10px;
+    font-size: 1em;
+    border-color: rgb(255, 145, 255);
+    color: rgb(255, 145, 255);
+}
+#operationsSelection {
+    height: 40px;
+}
+.intervalConfigBox {
+    margin: 5px;
+}
+#startTrainingButtonBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    width: 100%;
+    height: 50px;
+}
+#startTrainingButton {
+    text-align: center;
+    width: 65%;
+    height: 100%;
+    font-size: 1.3em;
+    background-color: rgb(59, 59, 59);
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(255, 145, 255);
+    color: rgb(255, 145, 255);
+}
+#intervalBoxFather {
+    margin-top: 15px;
+}
+#mistakeWarningBox {
+    margin: 10px;
+    display: block;
+}
+#mistakeWarning {
+    font-size: 1.8em;
+    color: rgb(255, 89, 89);
+    display: none;
+}

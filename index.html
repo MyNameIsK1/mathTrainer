@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mathTrainerStyle.css">
+    <link rel="shortcut icon" href="icon/calculator.ico" type="image/x-icon">
+    <title>mathTrainer</title>
+</head>
+
+<body>
+    <div id="settingsMenu">
+        <h1>Bem vindo ao MathTrainer!</h1>
+        <div>
+            <p>Por favor, selecione as operações que deseja treinar: </p>
+            <div id="operationsSelection">
+                <button class="operationsChoose" id="additionButton" onclick="getOperations('addition')">Adição</button>
+                <button class="operationsChoose" id="subtractionButton" onclick="getOperations('subtraction')">Subtração</button>
+                <button class="operationsChoose" id="multiplicationButton" onclick="getOperations('multiplication')">Multiplicação</button>
+            </div>
+        </div>
+        <div>
+            <p>Por favor, informe o intervalo numérico dos desafios:  </p>
+            <div id="intervalBoxFather">
+                <div class="intervalConfigBox">
+                    <label class="intervalConfigLabel">Min: </label>
+                    <input type="number" class="intervalConfig" id="minIntervalInput">
+                </div>
+                <div class="intervalConfigBox">
+                    <label class="intervalConfigLabel">Max: </label>
+                    <input type="number" class="intervalConfig" id="maxIntervalInput">
+                </div>
+                <div id="startTrainingButtonBox">
+                    <button id="startTrainingButton" onclick="startTraining()">Começar treinamento</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <main>
+        <div id="displaysBox">
+            <label id="streakDisplay">Streak: 0</label>
+            <label id="tempDisplay">Tempo: 0</label>
+            <label id="meanDisplay">Média: 0</label>
+        </div>
+        <div>
+            <label id="challenge">5 + 2</label>
+        </div>
+        <hr>
+        <div id="insertAnswerBlock">
+            <label>Resposta: </label>
+            <input type="number" id="insertAnswer">
+        </div>
+        <div id="playButtonsBox">
+            <button class="playButtons" id="restartButton" onclick="restartGame()">Reiniciar</button>
+            <button class="playButtons" id="exitButton" onclick="exitGame()">Terminar</button>
+            <button class="playButtons" id="goNextButton" onclick="goNext()">Prosseguir</button>
+        </div>
+        <div id="returnMenuFromGameBox">
+            <button class="playButtons" id="returnMenuFromGameButton">Retornar ao menu</button>
+        </div>
+        <div id="mistakeWarningBox">
+            <label id="mistakeWarning">Resposta incorreta!</label>
+        </div>
+    </main>
+    <div id="resultsFromGame">
+        <h1>RELATÓRIO</h1>
+        <hr>
+        <div>
+            <div class="reportBox">
+                <label>•Você resolveu </label>
+                <label id="operationsReport"></label>
+            </div>
+            <div class="reportBox">
+                <label>•Operando números entre </label>
+                <label id="intervalReport"></label>
+            </div>
+            <div class="reportBox">
+                <label>•Seu maior streak foi de</label>
+                <label id="streakReport"></label>
+            </div>
+            <div class="reportBox">
+                <label>•Seu tempo médio de resolução foi de </label>
+                <label id="timeReport"></label>
+            </div>
+            <div class="reportBox">
+                <label>•Você errou </label>
+                <label id="mistakesReport"></label>
+            </div>
+        </div>
+        <button id="returnMenuButton" onclick="returnToMenu()">Voltar ao início</button>
+    </div>
+    <div id="messageBox">
+        <label id="message">Ig: @MyNameIsK1_</label>
+    </div>
+</body>
+
+<script src="mathTrainer.js"></script>
+
+</html>
